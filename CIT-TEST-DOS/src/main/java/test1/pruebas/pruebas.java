@@ -7,10 +7,10 @@ public class pruebas {
     static WebDriver driver;
     
     public void responsive(){
-        System.setProperty("webdriver.chrome.driver", "D:\\Selenium\\chromedriver.exe");
+        System.setProperty("webdriver.chrome.driver", "C:\\Selenium\\chromedriver.exe");
         System.out.println("Test iniciado");
         driver = new ChromeDriver();
-     
+        driver.manage().window().setSize(new Dimension(375,812)); //Dimensiones de iphone X
         //Abre pantalla de inicio en tamaño responsive
         driver.get("https://www.ci-technologycr.com/View/inicio.php");
         
@@ -18,7 +18,7 @@ public class pruebas {
     
     public void enviarEmail(){
         
-        System.setProperty("webdriver.chrome.driver", "D:\\Selenium\\chromedriver.exe");
+        System.setProperty("webdriver.chrome.driver", "C:\\Selenium\\chromedriver.exe");
         System.out.println("Test iniciado");
         driver = new ChromeDriver();
         
@@ -39,7 +39,7 @@ public class pruebas {
     }
     
     public void registroIncompleto(){ //Falta el número de teléfono
-        System.setProperty("webdriver.chrome.driver", "D:\\Selenium\\chromedriver.exe");
+        System.setProperty("webdriver.chrome.driver", "C:\\Selenium\\chromedriver.exe");
         System.out.println("Test iniciado");
         driver = new ChromeDriver();
         driver.manage().window().maximize();
@@ -56,7 +56,7 @@ public class pruebas {
     }
     
     public void registroCompleto(){ //Falta el número de teléfono
-        System.setProperty("webdriver.chrome.driver", "D:\\Selenium\\chromedriver.exe");
+        System.setProperty("webdriver.chrome.driver", "C:\\Selenium\\chromedriver.exe");
         System.out.println("Test iniciado");
         driver = new ChromeDriver();
         driver.manage().window().maximize();
@@ -74,7 +74,7 @@ public class pruebas {
     }
     
     public void verificarRegistroUsuario(){
-        System.setProperty("webdriver.chrome.driver", "D:\\Selenium\\chromedriver.exe");
+        System.setProperty("webdriver.chrome.driver", "C:\\Selenium\\chromedriver.exe");
         System.out.println("Test iniciado");
         driver = new ChromeDriver();
         driver.manage().window().maximize();
@@ -90,7 +90,7 @@ public class pruebas {
     
     public void visualizarImagenes(){
         
-        System.setProperty("webdriver.chrome.driver", "D:\\Selenium\\chromedriver.exe");
+        System.setProperty("webdriver.chrome.driver", "C:\\Selenium\\chromedriver.exe");
         System.out.println("Test iniciado");
         driver = new ChromeDriver();
         driver.manage().window().maximize();
@@ -100,7 +100,7 @@ public class pruebas {
     }
     
     public void verificarComentario(){
-        System.setProperty("webdriver.chrome.driver", "D:\\Selenium\\chromedriver.exe");
+        System.setProperty("webdriver.chrome.driver", "C:\\Selenium\\chromedriver.exe");
         System.out.println("Test iniciado");
         driver = new ChromeDriver();
         driver.manage().window().maximize();
@@ -115,7 +115,7 @@ public class pruebas {
     }
     
     public void registrarComentario(){
-        System.setProperty("webdriver.chrome.driver", "D:\\Selenium\\chromedriver.exe");
+        System.setProperty("webdriver.chrome.driver", "C:\\Selenium\\chromedriver.exe");
         JavascriptExecutor js = ((JavascriptExecutor) driver);
         
         System.out.println("Test iniciado");
@@ -136,7 +136,7 @@ public class pruebas {
     }
     
     public void verificarRedSocial(){
-        System.setProperty("webdriver.chrome.driver", "D:\\Selenium\\chromedriver.exe");
+        System.setProperty("webdriver.chrome.driver", "C:\\Selenium\\chromedriver.exe");
         
         System.out.println("Test iniciado");
         driver = new ChromeDriver();
@@ -150,7 +150,7 @@ public class pruebas {
     
     public void registrarCotizacion(){
         
-        System.setProperty("webdriver.chrome.driver", "D:\\Selenium\\chromedriver.exe");
+        System.setProperty("webdriver.chrome.driver", "C:\\Selenium\\chromedriver.exe");
         System.out.println("Test iniciado");
         driver = new ChromeDriver();
         driver.manage().window().maximize();
@@ -169,7 +169,7 @@ public class pruebas {
     }
     
     public void inicioSesionUsuario(){
-        System.setProperty("webdriver.chrome.driver", "D:\\Selenium\\chromedriver.exe");
+        System.setProperty("webdriver.chrome.driver", "C:\\Selenium\\chromedriver.exe");
         System.out.println("Test iniciado");
         driver = new ChromeDriver();
         driver.manage().window().maximize();
